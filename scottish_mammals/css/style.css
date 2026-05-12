@@ -1,0 +1,192 @@
+/* ===============================
+   ROOT VARIABLES
+================================ */
+
+:root {
+  --clr-primary: #2d6a4f;
+  --clr-primary-dark: #1b4332;
+  --clr-primary-light: #52b788;
+  --clr-accent: #f4a261;
+  --clr-bg: #f8f9fa;
+  --clr-surface: #ffffff;
+  --clr-text: #212529;
+  --clr-text-muted: #6c757d;
+  --clr-border: #dee2e6;
+  --radius: 8px;
+  --shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+/* ===============================
+   BASE
+================================ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+
+  /* CLEAN BACKGROUND */
+  background: linear-gradient(to right, blue, lightblue);
+
+  min-height: 100vh;
+}
+
+/* ===============================
+   CENTERED LAYOUT
+================================ */
+main {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 30px;
+
+  background: white;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+/* ===============================
+   HEADER
+================================ */
+header {
+  background: var(--clr-primary-dark);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ===============================
+   FOOTER
+================================ */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #222;
+  color: white;
+  margin-top: 40px;
+}
+
+/* ===============================
+   FORM DESIGN
+================================ */
+.form-container {
+  max-width: 500px;
+  margin: auto;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid var(--clr-border);
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: var(--clr-primary);
+  outline: none;
+}
+
+/* BUTTON */
+button {
+  width: 100%;
+  padding: 12px;
+  background: var(--clr-primary);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--clr-primary-dark);
+}
+
+/* ===============================
+   TABLES
+================================ */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+th {
+  background: var(--clr-primary);
+  color: white;
+  padding: 10px;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid var(--clr-border);
+}
+
+tr:hover {
+  background: #f1f5ff;
+}
+
+/* ===============================
+   CARDS
+================================ */
+.card {
+  background: var(--clr-surface);
+  padding: 20px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin-bottom: 20px;
+}
+
+/* ===============================
+   IMAGE THUMBNAILS
+================================ */
+.thumb {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 2px solid var(--clr-border);
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+  main {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+}
